@@ -1,4 +1,4 @@
-h1 a, h2 a {
+h1 a, h2 a, h2 p {
     color:rgb(120, 205, 219);
     font-family: 'VT323';
 }
@@ -14,7 +14,6 @@ body {
 }
 
 .page-header {
-    display: flex;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -30,7 +29,41 @@ body {
 
 .header-img{
     float:left;
+    padding-top: 20px;
     margin-right: 10px;
     width: 50px;
     height: auto;
+}
+
+.titulo_post{
+    color:rgb(120, 205, 219);
+    font-family: 'VT323';
+}
+
+h2, h3, h4 {
+    font-family: 'VT323';
+    color:rgb(120, 205, 219);
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+    color: black;
+}
+
+.save {
+    float: right;
+    font-family: 'VT323';
+    background-color: skyblue;
+    color: black;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 30pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
 }

@@ -1,0 +1,22 @@
+{% extends 'blog/base.html'%}
+
+{% block content%}
+    <div class="post">
+
+        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+
+        <h2><p>{{post.titulo}}</p></h2>
+
+
+        <p>{{post.texto|linebreaksbr}}</p>
+
+        {% if post.fecha_publicacion%}
+
+            <div class="date">
+                <p>Publicado: {{post.fecha_publicacion}}</p>
+            </div>
+
+        {%endif%}
+
+    </div>
+{%endblock%}

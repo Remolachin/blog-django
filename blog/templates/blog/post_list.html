@@ -12,17 +12,12 @@
             <h1><a href="">Django Blog</a></h1>
         </div>
 
-        <div>
-            <p>Anything</p>
-            <h2><a href="">Primer Post Post</a></h2>
-            <p>Anything</p>
-        </div>
-            <p>Anything</p>
-            <h2><a href="">Segundo Post</a></h2>
-            <p>Anything</p>
-        <div>
-
-        </div>
-    
+        {%for post in posts%}
+            <div>
+                <h2><a href="">{{post.titulo}}</a></h2>
+                <p>{{post.texto|linebreaksbr}}</p>
+                <p>Publicado: {{post.fecha_publicacion}}</p>
+            </div>
+        {%endfor%}
     </body>
 </html>
